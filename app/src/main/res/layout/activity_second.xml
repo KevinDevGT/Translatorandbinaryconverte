@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+<include layout="@layout/toolbar"
+    android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp">
+
+        <EditText
+            android:id="@+id/editTextBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="7dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/redondo2"
+            android:padding="9.5dp"
+            android:text="      BIN      "
+            android:textColor="#ffffff" />
+        <!-- -->
+        <EditText
+            android:id="@+id/editTextOct"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:padding="7dp"
+            android:text=""
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/textViewOct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="97dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/redondo2"
+            android:padding="9.5dp"
+            android:text="     OCT     "
+            android:textColor="#ffffff" />
+        <!-- -->
+        <EditText
+            android:id="@+id/editTextHex"
+            android:layout_width="246dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:padding="7dp"
+            android:text=""
+            android:maxLines="1"
+            android:inputType="text"/>
+
+        <TextView
+            android:id="@+id/textViewHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="147dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/redondo2"
+            android:padding="9.5dp"
+            android:text="     HEX     "
+            android:textColor="#ffffff" />
+        <!-- -->
+        <EditText
+            android:id="@+id/editTextBAS64"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:inputType="text"
+            android:maxLines="1"
+            android:padding="7dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewBAS64"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/redondo2"
+            android:padding="9.5dp"
+            android:text="  BASE64 "
+            android:textColor="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCopyBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="53dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_content_copy" />
+        <ImageButton
+        android:id="@+id/imageButtonCopyOct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="103dp"
+        android:layout_marginEnd="13dp"
+        android:background="@null"
+        app:srcCompat="@drawable/ic_content_copy" />
+
+        <ImageButton
+            android:id="@+id/imageButtonCopyHex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="153dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_content_copy" />
+        <ImageButton
+            android:id="@+id/imageButtonCopyBase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="203dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_content_copy" />
+    </RelativeLayout>
+</RelativeLayout>

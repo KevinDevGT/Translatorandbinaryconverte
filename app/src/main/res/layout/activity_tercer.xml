@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SecondActivity"
+    android:orientation="vertical">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:layout_marginTop="0dp">
+
+        <EditText
+            android:id="@+id/editTextBin"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:maxLines="5"
+            android:padding="7dp"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/textViewBin"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="47dp"
+            android:gravity="center_vertical"
+            android:background="@drawable/redondo2"
+            android:padding="10dp"
+            android:text="    TEXT   "
+            android:textColor="#ffffff" />
+        <!-- -->
+        <EditText
+            android:id="@+id/editTextOct"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="96dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginEnd="49dp"
+            android:background="@drawable/redondo"
+            android:padding="7dp"
+            android:text=""
+            android:maxLines="5" />
+
+        <TextView
+            android:id="@+id/textViewOct"
+            android:layout_width="wrap_content"
+            android:layout_height="130dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="29dp"
+            android:layout_marginTop="197dp"
+            android:layout_marginBottom="0dp"
+            android:background="@drawable/redondo2"
+            android:padding="10dp"
+            android:gravity="center_vertical"
+            android:text="      BIN     "
+            android:textColor="#ffffff" />
+        <!-- -->
+
+        <ImageButton
+            android:id="@+id/imageButtonCopyBin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="103dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_content_copy" />
+        <ImageButton
+            android:id="@+id/imageButtonCopyOct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="253dp"
+            android:layout_marginEnd="13dp"
+            android:background="@null"
+            app:srcCompat="@drawable/ic_content_copy" />
+
+    </RelativeLayout>
+</RelativeLayout>

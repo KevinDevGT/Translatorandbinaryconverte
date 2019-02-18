@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include layout="@layout/toolbar"
+        android:id="@+id/toolbar"/>
+
+
+    <RelativeLayout
+        android:id="@+id/cuerpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/toolbar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/bordes">
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="61dp"
+            android:layout_marginTop="5dp" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="34dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="80dp" />
+
+        <TextView
+            android:id="@+id/textViewConverter1"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:hint="BIN"
+            android:text=""
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/textViewConverter"
+            android:layout_width="54dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="111dp"
+            android:hint="BIN"
+            android:text=""
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextLado2"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="200dp"
+            android:layout_marginBottom="1dp"
+            android:background="@null"
+            android:hint="Ingrese texto"
+            android:maxLines="4"
+            android:text=""
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/editTextLado"
+            android:layout_width="wrap_content"
+            android:layout_height="122dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="200dp"
+            android:layout_marginTop="44dp"
+            android:background="@null"
+            android:hint="Ingrese texto"
+            android:maxLines="4"
+            android:text=""
+            android:textAlignment="center" />
+        <RelativeLayout
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimary"
+            android:layout_centerHorizontal="true">
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+
+
+</RelativeLayout>
